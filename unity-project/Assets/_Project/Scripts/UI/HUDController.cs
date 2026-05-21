@@ -24,9 +24,8 @@ namespace SalvageCrew.UI
         {
             if (onOxygenChanged != null) onOxygenChanged.OnRaised += SetO2;
             if (onContractProgress != null) onContractProgress.OnRaised += SetProgress;
-            if (onDepptureCountdownSafe() != null) onDepartureCountdown.OnRaised += SetCountdown;
+            if (onDepartureCountdown != null) onDepartureCountdown.OnRaised += SetCountdown;
         }
-        private FloatEventChannel onDepptureCountdownSafe() => onDepartureCountdown;
 
         private void OnDisable()
         {
